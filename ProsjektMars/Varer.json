@@ -1,0 +1,165 @@
+{
+	"varer": {
+		"Vinterjakker": {
+			"vinterjakke1": {
+				"class": "one",
+        "farge": "Svart",
+				"pris": 1499,
+				"type": "Herre",
+				"bilde": "vinterjakke1.jpg"
+			},
+			"vinterjakke2": {
+				"class": "two",
+        "farge": "Blå",
+				"pris": 1999,
+				"type": "Herre",
+				"bilde": "vinterjakke2.jpg"
+			},
+
+			"vinterjakke3": {
+				"class": "three",
+        "farge": "Hvit",
+				"pris": 2499,
+				"type": "Dame",
+				"bilde": "vinterjakke3.jpg"
+			},
+
+
+			"vinterjakke4": {
+				"class": "four",
+        "farge": "Oransje",
+				"pris": 1499,
+				"type": "Dame",
+				"bilde": "vinterjakke4.jpg"
+			},
+
+			"vinterjakke5": {
+				"class": "five",
+        "farge": "Svart",
+				"pris": 999,
+				"type": "Dame",
+				"bilde": "vinterjakke5.jpg"
+			},
+
+			"vinterjakke6": {
+				"class": "six",
+        "farge": "Svart",
+				"pris": 2999,
+				"type": "Herre",
+				"bilde": "vinterjakke6.jpg"
+			}
+    },
+			"Vintersko": {
+				"vintersko1": {
+					"Størrelse": 45,
+					"class": "seven",
+          "farge": "Brun",
+					"pris": 1499,
+					"type": "Herre",
+					"bilde": "vintersko1.jpg"
+				},
+				"vintersko2": {
+					"Størrelse": 42,
+					"class": "eigth",
+          "farge": "Svart",
+					"pris": 899,
+					"type": "Herre",
+					"bilde": "vintersko2.jpg"
+				},
+
+				"vintersko3": {
+					"Størrelse": 40,
+					"class": "nine",
+          "farge": "Brun",
+					"pris": 1099,
+					"type": "Dame",
+					"bilde": "vintersko3.jpg"
+				},
+
+				"vintersko4": {
+					"Størrelse": 38,
+					"class": "ten",
+          "farge": "Svart",
+					"pris": 899,
+					"type": "Dame",
+					"bilde": "vintersko4.jpg"
+				},
+
+				"vintersko5": {
+					"Størrelse": 39,
+					"class": "elleven",
+          "farge": "Brun",
+					"pris": 799,
+					"type": "Dame",
+					"bilde": "vintersko5.jpg"
+				},
+
+				"vintersko6": {
+					"Størrelse": 44,
+					"class": "twelve",
+          "farge": "Brun",
+					"pris": 1299,
+					"type": "Herre",
+					"bilde": "vintersko6.jpg"
+
+				}
+      },
+         "Vinterbukse":{
+           "vinterbukse1": {
+             "class": "thirteen",
+             "farge":"Brun",
+             "pris": 999,
+             "type": "Herre",
+             "bilde":"vinterbukse1.jpg"
+           },
+             "vinterbukse2": {
+               "class": "fourteen",
+               "farge":"Svart",
+               "pris": 1299,
+               "type": "Herre",
+               "bilde":"vinterbukse2.jpg"
+
+         },
+           "vinterbukse3": {
+             "class": "fifteen",
+             "farge":"Svart",
+             "pris": 1499,
+             "type": "Dame",
+             "bilde":"vinterbukse3.jpg"
+
+       },
+         "vinterbukse4": {
+           "class": "sixteen",
+           "farge":"Beige",
+           "pris": 1499,
+           "type": "Dame",
+           "bilde":"vinterbukse4.jpg"
+
+         },
+           "vinterbukse5": {
+             "class": "seventeen",
+             "farge":"Svart",
+             "pris": 1299,
+             "type": "Herre",
+             "bilde":"vinterbukse5.jpg"
+
+       },
+         "vinterbukse6": {
+           "class": "eighteen",
+           "farge":"Svart",
+           "pris": 999,
+           "type": "Dame",
+           "bilde":"vinterbukse6.jpg"
+
+     },
+       "vinterbukse7": {
+         "class": "nineteen",
+         "farge":"Svart",
+         "pris": 1399,
+         "type": "Herre",
+         "bilde":"vinterbukse7.jpg"
+
+   }
+			 }
+		}
+	}

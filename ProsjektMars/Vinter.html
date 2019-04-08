@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="Vinter.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB42UzGyhDFZr_BfYvDtGtJaPmWgKEYcRo",
+    authDomain: "prosjektmars.firebaseapp.com",
+    databaseURL: "https://prosjektmars.firebaseio.com",
+    projectId: "prosjektmars",
+    storageBucket: "",
+    messagingSenderId: "501470542853"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  </head>
+
+
+  <body>
+    <header>
+
+    <div class="container">
+      <h1 class="logo"></h1>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i></li>
+          <li><a href="#">Vinter</a></li>
+          <li><a href="#">Friluft</a></li>
+          <li><a href="#">Trening</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Alle varer</a></li>
+        </ul>
+      </nav>
+    </div>
+   </header>
+
+<button onclick="visPris()">Pris</button>
+
+
+   <div id="wrapper" class="wrapper">
+     <div class="one">One</div>
+     <div class="two">Two</div>
+     <div class="three">Three</div>
+     <div class="four">Four</div>
+     <div class="five">Five</div>
+     <div class="six">Six</div>
+     <div class="seven">Seven</div>
+     <div class="eigth">Eigth</div>
+     <div class="nine">Nine</div>
+     <div class="ten">Ten</div>
+     <div class="elleven">Elleven</div>
+     <div class="twelve">Twelve</div>
+     <div class="thirteen">Thirteen</div>
+     <div class="fourteen">Fourteen</div>
+     <div class="fifteen">Fifteen</div>
+     <div class="sixteen">Sixteen</div>
+     <div class="seventeen">Seventeen</div>
+     <div class="eighteen">Eighteen</div>
+     <div class="nineteen">Nineteen</div>
+   </div>
+
+   <main>
+
+   </main>
+
+   <script type="text/javascript">
+
+   const wrapper = document.getElementById("wrapper");
+   const db = firebase.database();
+   const skos = db.ref("varer/Vintersko");
+   const jakker = db.ref("varer/Vinterjakker");
+   const bukser = db.ref("varer/Vinterbukse")
+   const varer = db.ref("varer");
+   visAlle();
+
+   function visJakker(snapshot){
+
+       let jakke = snapshot.val();
+       let key = snapshot.key;
+       console.log(snapshot.val())
+       wrapper.innerHTML +=`
+           <article class="vare ${jakke.class}">
+               <h1>${jakke.farge} - ${jakke.type}</h1>
+               <img src="Bilder/${jakke.bilde}" alt="jakke" />
+               <p>Pris: ${jakke.pris}</p>
+           </article>
+       `
+         }
+         function visSko(snapshot){
+            let sko = snapshot.val();
+             let key = snapshot.key;
+             console.log(snapshot.val())
+             wrapper.innerHTML +=`
+                 <article class="vare ${sko.class}">
+                     <h1>${sko.farge} - ${sko.type}</h1>
+                     <img src="Bilder/${sko.bilde}" alt="sko" />
+                     <p>Pris: ${sko.pris}</p>
+                 </article>
+             `
+               }
+
+         function visAlle(){
+           wrapper.innerHTML = ""
+           jakker.on("child_added",visJakker);
+           skos.on("child_added",visSko);
+         }
+
+         function visPris(){
+           console.log("hei");
+           wrapper.innerHTML = ""
+           jakker.orderByChild("pris").on("child_added",visVare);
+         }
+
+
+  </script>
+
+  </body>
+</html>
