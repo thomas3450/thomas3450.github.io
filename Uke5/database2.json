@@ -1,0 +1,25 @@
+{
+  "1":{
+    "svar":"En primærnøkkel er en unik kode som gjør at vi raskt kan finne det vi leter etter i en database."
+  },
+  "2":{
+    "a":{
+      "svar":"Elevkort/ElevID"
+    },
+    "b":{
+      "svar":"Registreringsnummer på fritidsbåter."
+    },
+    "c":{
+      "svar":"Navneregister"
+    },
+    "d":{
+      "svar":"Full navn"
+    },
+    "3":{
+      "svar":"Kandidatnøkkel er alle alternativene som kan brukes som primærnøkkel"
+    },
+    "4":{
+      "svar":"En primærnøkkel   "
+    }
+  }
+}

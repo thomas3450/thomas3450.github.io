@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyATZEalTePcBVuTx_O3MX6jZcQ8RqQR-t8",
+        authDomain: "it-database-a5960.firebaseapp.com",
+        databaseURL: "https://it-database-a5960.firebaseio.com",
+        projectId: "it-database-a5960",
+        storageBucket: "it-database-a5960.appspot.com",
+        messagingSenderId: "657823545722"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      const db = firebase.database();
+      const bloggere =  db.ref("bloggere");
+
+       bloggere.push({
+         "navn":"Sophie Elise",
+         "følgere": 59000,
+         "alder":23
+       });
+       // Pusher to strings til databasen.
+       bloggere.push("Pappahjerte");
+
+       const billGates = bloggere.child(90440000);
+
+
+       billGates.set({
+         "navn":"Bill Gates",
+         "epost":"bill@microsoft.com"
+       });
+
+       const steveJobs = bloggere.child(90440000);
+       steveJobs.set({
+         "navn": "Steve Jobs",
+         "epost":"steve@apple.com"
+       });
+
+       //endre data
+       steveJobs.update({
+         "navn":"Steve Jobs"
+       });
+
+
+
+
+
+
+      // bloggere.remove()
+    </script>
+  </body>
+</html>

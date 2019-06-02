@@ -1,0 +1,241 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <link rel="stylesheet" href="Nyhovedside.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB42UzGyhDFZr_BfYvDtGtJaPmWgKEYcRo",
+      authDomain: "prosjektmars.firebaseapp.com",
+      databaseURL: "https://prosjektmars.firebaseio.com",
+      projectId: "prosjektmars",
+      storageBucket: "prosjektmars.appspot.com",
+      messagingSenderId: "501470542853"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <div class="row">
+    <div class=" columns">
+      <div class="logo">
+        <h1>Klöthes</h1>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <nav class="top-bar data-topbar">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="Nyhovedside.html">HOME</a></h1>
+              </li>
+              <li onclick="toggleMenu()" class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+            </nav>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class=" columns">
+          <ul class="breadcrumbs">
+            <li class="unavailable"><button class="sortButton noclick">Sort by:</button></li>
+            <li><button class="sortButton" onclick="VisSko()">Price</button></li>
+            <li class="unavailable"><button class="sortButton" onclick="VisTyper()">For:</button></li>
+            <li id="type1" class="current hidden"><button class="sortButton" onclick="VisType1()">Men</button></li>
+            <li id="type2" class="current hidden"><button class="sortButton" onclick="VisType2()">Women</button></li>
+
+
+            <li class="unavailable"><button class="sortButton" onclick="VisFarger()">Color:</button></li>
+              <li id="farge1" class="current hidden"><button class="sortButton" onclick="VisFarge1()">Black</button></li>
+              <li id="farge2" class="current hidden"><button class="sortButton" onclick="VisFarge2()">Brown</button></li>
+              <li id="farge3" class="unavailable hidden"><button class="sortButton" onclick="VisFarge3()">Blue</button></li>
+              <li id="farge4" class="unavailable hidden"><button class="sortButton" onclick="VisFarge4()">Green</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <img id="forsidebilde" src="Bilder/Forsidebilde.jpg">
+      </div>
+        <div class="columns productgalleries">
+          <div id="display_target" class="row main_products_container">
+
+          </div>
+          <div class="columns">
+            <hr></hr>
+            <div class="pagination-centered">
+              <ul class="pagination">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li class="unavailable"><a href="">&hellip;</a></li>
+                <li><a href="">12</a></li>
+                <li><a href="">13</a></li>
+                <li class="arrow"><a href="">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" columns">
+          <div class="panel">
+            <div class="row foot_double">
+              <div class="columns">
+                <img src="Bilder/Klesbutikk.jpg">
+              </div>
+              <div class="columns">
+                <strong> About us <hr/></strong>
+                <h5>
+                  Kløthes is the biggest clothing company in the world with stores in more than 100 countries. Our wares have the best qualitys for the smallest of prices. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <footer class="row">
+    <div class=" columns">
+      <hr />
+      <div class="row foot_lunks">
+
+        <div class="columns">
+          <ul class="inline-list left">
+            <li>© Copyright 2019 Klöthes</li>
+          </ul>
+        </div>
+        <div class="columns foot_links">
+          <ul class="inline-list right">
+            <li><a href="NyHovedside.html">Home</a></li>
+            <li><a href="NyUnderside.html">Store</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="News.html">News</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+  </div>
+
+  <div id="menu" class="collapsed_menu right_menu">
+    <div class="menu_content">
+      <span onclick="toggleMenu()"><i class="fas fa-times"></i></span>
+      <a href="NyUnderside.html"><p>Sneakers</p></a>
+      <a href="News.html"><p>News</p></a>
+      <a href="ContactUs.html"><p>Contact Us</p></a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("collapsed_menu");
+    }
+  </script>
+
+</body>
+<script type="text/javascript">
+  const db = firebase.database()
+  const display_target = document.getElementById("display_target")
+  const sko = db.ref("varer/Vintersko")
+
+
+  function generateSko(snapshot) {
+    console.log(snapshot.val())
+    let sko = snapshot.val();
+    let key = snapshot.key;
+    display_target.innerHTML +=`
+    <div class="mainpage_products">
+     <img src="${sko.bilde}">
+        <div class="text_container">
+          <h5>${sko.navn}</h5>
+          <h6 class="subheader">${sko.pris}kr</h6>
+          <a href="Sko_detaljer.html?id=${key}">Show more<a>
+        </div>
+    </div>
+    `
+  }
+
+  function showSko() {
+    display_target.innerHTML = ""
+    sko.on("child_added", generateSko);
+  }
+  showSko();
+
+
+    function VisFarger() {
+      let farge1 = document.getElementById("farge1");
+      farge1.classList.toggle("hidden");
+      let farge2 = document.getElementById("farge2");
+      farge2.classList.toggle("hidden");
+      let farge3 = document.getElementById("farge3");
+      farge3.classList.toggle("hidden");
+      let farge4 = document.getElementById("farge4");
+      farge4.classList.toggle("hidden");
+    }
+
+    function VisTyper() {
+      let type1 = document.getElementById("type1");
+      type1.classList.toggle("hidden");
+      let type2 = document.getElementById("type2");
+      type2.classList.toggle("hidden");
+      }
+
+    function VisType1(){
+      display_target.innerHTML=``;
+      console.log("Heii");
+      sko.orderByChild("type").equalTo("Men").on("child_added",generateSko);
+
+    }
+
+    function VisType2(){
+      display_target.innerHTML=``;
+      console.log("Heii");
+      sko.orderByChild("type").equalTo("Women").on("child_added",generateSko);
+
+    }
+
+    function VisSko(){
+      display_target.innerHTML=``;
+      console.log("pris");
+      sko.orderByChild("pris").on("child_added", generateSko);
+    }
+
+    function VisFarge1(){
+      console.log("Hei");
+      display_target.innerHTML=``;
+      sko.orderByChild("farge").equalTo("Black").on("child_added", generateSko);
+
+
+    }
+    function VisFarge2(){
+      console.log("Hei");
+      display_target.innerHTML=``;
+      sko.orderByChild("farge").equalTo("Brown").on("child_added", generateSko);
+
+
+    }
+
+  </script>
+
+
+
+</html>

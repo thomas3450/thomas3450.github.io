@@ -1,0 +1,22 @@
+
+body{
+  background-color: darkcyan;
+}
+header{
+  background-color: darkgrey;
+}
+
+ul#horizontal-list li{
+  display:inline;
+  margin:10px;
+}
+h1{
+  Font-size: 50px;
+  Font-style: Verdana, Times;
+}
+.div-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 10px;
+  grid-column-gap: 10px;
+}

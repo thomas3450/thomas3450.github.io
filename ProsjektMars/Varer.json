@@ -1,165 +1,206 @@
-{
+	{
 	"varer": {
-		"Vinterjakker": {
-			"vinterjakke1": {
-				"class": "one",
-        "farge": "Svart",
-				"pris": 1499,
-				"type": "Herre",
-				"bilde": "vinterjakke1.jpg"
-			},
-			"vinterjakke2": {
-				"class": "two",
-        "farge": "Blå",
-				"pris": 1999,
-				"type": "Herre",
-				"bilde": "vinterjakke2.jpg"
-			},
 
-			"vinterjakke3": {
-				"class": "three",
-        "farge": "Hvit",
-				"pris": 2499,
-				"type": "Dame",
-				"bilde": "vinterjakke3.jpg"
-			},
-
-
-			"vinterjakke4": {
-				"class": "four",
-        "farge": "Oransje",
-				"pris": 1499,
-				"type": "Dame",
-				"bilde": "vinterjakke4.jpg"
-			},
-
-			"vinterjakke5": {
-				"class": "five",
-        "farge": "Svart",
-				"pris": 999,
-				"type": "Dame",
-				"bilde": "vinterjakke5.jpg"
-			},
-
-			"vinterjakke6": {
-				"class": "six",
-        "farge": "Svart",
-				"pris": 2999,
-				"type": "Herre",
-				"bilde": "vinterjakke6.jpg"
-			}
-    },
 			"Vintersko": {
 				"vintersko1": {
-					"Størrelse": 45,
+					"Size":44,
 					"class": "seven",
-          "farge": "Brun",
+          "farge": "Black",
 					"pris": 1499,
-					"type": "Herre",
-					"bilde": "vintersko1.jpg"
+					"type": "Men",
+					"navn": "Aldo Giawet",
+					"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/A0/11/2K/00/XQ/11/A0112K00X-Q11@8.jpg?imwidth=1524"
 				},
 				"vintersko2": {
-					"Størrelse": 42,
+					"Size": 42,
 					"class": "eigth",
-          "farge": "Svart",
+          "farge": "Black",
 					"pris": 899,
-					"type": "Herre",
-					"bilde": "vintersko2.jpg"
+					"type": "Men",
+					"navn": "Palladium Pampa",
+					"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/P1/31/5D/00/HQ/11/P1315D00H-Q11@12.jpg?imwidth=1524"
 				},
 
 				"vintersko3": {
-					"Størrelse": 40,
+					"Size": 40,
 					"class": "nine",
-          "farge": "Brun",
+          "farge": "Brown",
 					"pris": 1099,
-					"type": "Dame",
-					"bilde": "vintersko3.jpg"
+					"type": "Women",
+					"navn": "Ugg Classic Waterproof",
+					"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/UG/11/2D/01/HB/11/UG112D01H-B11@12.jpg?imwidth=1524"
 				},
 
 				"vintersko4": {
-					"Størrelse": 38,
+					"Size": 38,
 					"class": "ten",
-          "farge": "Svart",
-					"pris": 899,
-					"type": "Dame",
-					"bilde": "vintersko4.jpg"
+          "farge": "Black",
+					"pris": 1499,
+					"type": "Women",
+					"navn": "Tigha Snow Boots",
+					"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/TG/01/2K/00/9Q/11/TG012K009-Q11@8.jpg?imwidth=1524"
 				},
 
 				"vintersko5": {
-					"Størrelse": 39,
+					"Size": 39,
 					"class": "elleven",
-          "farge": "Brun",
-					"pris": 799,
-					"type": "Dame",
-					"bilde": "vintersko5.jpg"
+          "farge": "Brown",
+					"pris": 1999,
+					"type": "Men",
+					"navn": "Timberland 6inch Premium",
+					"bilde":"https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/TI/11/2C/04/A7/02/TI112C04A-702@19.jpg?imwidth=1524"
 				},
 
 				"vintersko6": {
-					"Størrelse": 44,
+					"Size": 44,
 					"class": "twelve",
-          "farge": "Brun",
+          "farge": "Black",
 					"pris": 1299,
-					"type": "Herre",
-					"bilde": "vintersko6.jpg"
+					"type": "Women",
+					"navn": "Pier One Winterboots",
+					"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/PI/91/2L/00/4Q/11/PI912L004-Q11@10.jpg?imwidth=1524"
 
-				}
-      },
-         "Vinterbukse":{
-           "vinterbukse1": {
-             "class": "thirteen",
-             "farge":"Brun",
-             "pris": 999,
-             "type": "Herre",
-             "bilde":"vinterbukse1.jpg"
+				},
+
+				"vintersko7": {
+					"Size": 42,
+					"class": "twelve",
+					"farge": "Brown",
+					"pris": 1599,
+					"type": "Women",
+					"navn": "Emelie Foldover",
+					"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/SO/61/1A/01/2O/11/SO611A012-O11@2.1.jpg?imwidth=1524"
+       },
+
+
+			 "vintersko8": {
+				 "Size": 39,
+				 "class": "twelve",
+				 "farge": "Black",
+				 "pris": 1799,
+				 "type": "Women",
+				 "navn": "Caprice",
+				 "bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/A0/11/2K/00/XQ/11/A0112K00X-Q11@8.jpg?imwidth=1524"
+			},
+
+			"vintersko9": {
+				"Size": 43,
+				"class": "twelve",
+				"farge": "Black",
+				"pris": 2199,
+				"type": "Men",
+				"navn": "Pajar LINTON",
+				"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/P1/21/2K/00/8Q/11/P1212K008-Q11@8.jpg?imwidth=1524"
+		 },
+		 "vintersko10": {
+			 "Size": 45,
+			 "class": "twelve",
+			 "farge": "Brown",
+			 "pris": 1299,
+			 "type": "Men",
+			 "navn": "Giorgio 1959 Camel",
+			 "bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/G7/81/2L/00/1O/12/G7812L001-O12@8.jpg?imwidth=1524"
+		},
+
+		"vintersko11": {
+			"Size": 44,
+			"class": "twelve",
+			"farge": "Brown",
+			"pris": 1849,
+			"type": "Men",
+			"navn": "Lacoste Explorateur",
+			"bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/LA/21/2N/00/AB/11/LA212N00A-B11@12.jpg?imwidth=1524"
+	 },
+	 "vintersko12": {
+		 "Size": 43,
+		 "class": "twelve",
+		 "farge": "Brown",
+		 "pris": 1049,
+		 "type": "Women",
+		 "navn": "Soral Carnival Waterproof",
+		 "bilde": "https://mosaic03.ztat.net/vgs/media/pack/article-image-mhq/SO/61/1C/00/3B/11/SO611C003-B11@4.1.jpg?imwidth=1524"
+	}
+			},
+
+         "Joggesko":{
+           "Joggesko1": {
+             "Size":44,
+             "farge":"Orange",
+             "pris": 2499,
+             "type": "Men",
+						 "navn": "Nike Vaporfly 4%",
+             "bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/rlpfdp3vppliikmmv5lp/vaporfly-4-flyknit-lopesko-Br70Kg.jpg"
            },
-             "vinterbukse2": {
-               "class": "fourteen",
-               "farge":"Svart",
-               "pris": 1299,
-               "type": "Herre",
-               "bilde":"vinterbukse2.jpg"
+             "Joggesko2": {
+               "Size":38,
+               "farge":"White",
+               "pris": 1499,
+               "type": "Women",
+							 "navn": "Nike Zoom Pegasus",
+               "bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/agqcwatjgutqs0w06zte/zoom-pegasus-35-turbo-lopesko-SMjpXf.jpg"
 
          },
-           "vinterbukse3": {
-             "class": "fifteen",
-             "farge":"Svart",
-             "pris": 1499,
-             "type": "Dame",
-             "bilde":"vinterbukse3.jpg"
+           "Joggesko3": {
+             "Size":42,
+             "farge":"Black",
+             "pris": 2999,
+             "type": "Men",
+						 "navn": "Jordan Proto Max",
+             "bilde":"https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/ph439oiamen6r6mzk3nu/jordan-proto-max-720-herresko-JKTnFS.jpg"
 
        },
-         "vinterbukse4": {
-           "class": "sixteen",
-           "farge":"Beige",
-           "pris": 1499,
-           "type": "Dame",
-           "bilde":"vinterbukse4.jpg"
-
+         "Joggesko4": {
+          "Size":45,
+           "farge":"White",
+           "pris": 1799,
+           "type": "Men",
+					 "navn": "Air Jordan Legacy",
+           "bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/gg1qmtlfexqsmatkvpln/air-jordan-legacy-312-herresko-6Bp0CD.jpg"
          },
-           "vinterbukse5": {
-             "class": "seventeen",
-             "farge":"Svart",
-             "pris": 1299,
-             "type": "Herre",
-             "bilde":"vinterbukse5.jpg"
+           "Joggesko5": {
+             "Size":43,
+             "farge":"Orange",
+             "pris": 3499,
+             "type": "Men",
+						 "navn": "Air-MAX 720",
+             "bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/vnspzwgl7lv9mtpvblop/air-max-720-herresko-Vc2TZM.jpg"
 
        },
-         "vinterbukse6": {
-           "class": "eighteen",
-           "farge":"Svart",
-           "pris": 999,
-           "type": "Dame",
-           "bilde":"vinterbukse6.jpg"
+         "Joggesko6": {
+          "Size":42,
+           "farge":"Black",
+           "pris": 2999,
+           "type": "Men",
+					 "navn": "Nike Air Vapormax 2019",
+           "bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/lslhzir5lleihtobtdcr/air-vapormax-2019-sko-2R5nZ2.jpg"
 
      },
-       "vinterbukse7": {
-         "class": "nineteen",
-         "farge":"Svart",
-         "pris": 1399,
-         "type": "Herre",
-         "bilde":"vinterbukse7.jpg"
+       "Joggesko7": {
+      "Size":40,
+         "farge":"Pink",
+         "pris": 2499,
+         "type": "Women",
+				 "navn": "Nike Air Max Plus Premium",
+         "bilde":"https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/n3cxmjdsisslweyktq49/air-max-plus-sko-h3ZfGd.jpg"
 
-   }
+   },
+	 "Joggesko8": {
+		 "Size":37,
+		 "farge":"White",
+		 "pris": 1399,
+		 "type": "Women",
+		 "navn": "Air-Force Sage Low Camo",
+		 "bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/vdxttl7sdmmknmibstdg/air-force-1-sage-low-camo-sko-1SFrs6.jpg"
+},
+		"Joggesko9": {
+			"Size":44,
+			"farge":"Black",
+			"pris": 899,
+			"type": "Men",
+			"navn": "Varsity Complete",
+			"bilde":"https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/zahha1cro9arunw88cy1/varsity-complete-tr-2-treningssko-smrPv7.jpg"
+
+}  
 			 }
 		}
 	}

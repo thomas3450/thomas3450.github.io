@@ -1,0 +1,64 @@
+
+h1{
+  font-style: italic;
+  font-family: verdana, times;
+}
+img{
+  width: 400px;
+
+}
+
+
+ul#horizontal-list li{
+  display:inline;
+  margin:10px;
+  padding:10px;
+  background-color:papayawhip;
+
+}
+
+
+header{
+  margin-left:200px;
+  margin-right:200px;
+}
+
+main{
+  margin-left:200px;
+  margin-right:200px;
+}
+
+body{
+  background-color: lightblue;
+
+}
+img{
+  width:400px;
+  border-style:solid;
+  border-color:tomato;
+  border-width:10px;
+  box-shadow: 10px 5px 2.5px;
+
+}
+ul li{
+  list-style-type:none;
+}
+Video{
+  width:300px;
+}
+
+td{
+background-color:papayawhip;
+padding:7px 14px;
+border:2px solid olive;
+}
+table{
+  border-collapse: collapse;
+
+}
+th{
+  text-align:left;
+  padding:7px 14px;
+  border:2px solid olive;
+  border-bottom:4px solid darkolivegreen;
+}

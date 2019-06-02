@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDCwq7y5N95yoN0edUdQsjfjAsNNaCP7V8",
+        authDomain: "nettbutikk-c5c2d.firebaseapp.com",
+        databaseURL: "https://nettbutikk-c5c2d.firebaseio.com",
+        projectId: "nettbutikk-c5c2d",
+        storageBucket: "nettbutikk-c5c2d.appspot.com",
+        messagingSenderId: "287973345619"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+
+    <button type="button" name="button" onclick="sorterPris" >Laveste pris</button>
+    <main>
+    <section id="secVarer">
+    </section>
+    </main>
+    <script type="text/javascript">
+    const db = firebase.database();
+    const jakker = db.ref("varer/jakker");
+    const sko = db.ref("varer/sko");
+
+
+      function visvare(snapshot){
+        console.log(snapshot.val());
+        let vare =snapshot.val();
+        secVarer.innerHTML += `
+          <h1>${snapshot.val().merke}: ${vare.modell}</h1>
+          <p>Pris:${vare.pris}</p>
+          `
+      }
+      /*
+     jakker.on("child_added", visvare);
+     sko.on("child_added", visvare);
+     sko.orderByChild("pris").on("child_added", visvare);
+     sko.orderByChild("pris").
+     sko //referanse til databasen
+      .orderByChild("pris")//sorteringsfunksjon
+      .limitToFirst(2)//sorteringsfunksjon
+      .on("child_added", visVare); //spørrefunksjon
+
+*/
+function sorterPris(){
+  sko
+  .orderByChild("pris")
+  .limitToFirst(2)
+  .on("child_added", visVare);
+}
+
+</script>
+
+  </body>
+</html>

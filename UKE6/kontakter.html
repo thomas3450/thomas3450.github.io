@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="kontakter.css">
+  </head>
+  <body>
+
+      <section>
+          <form id="skjema">
+              <input id="inpNavn" type="text" required placeholder="navn">
+              <input id="inpTelefon" type="text" required placeholder="telefon">
+              <input id="inpEpost" type="text" required placeholder="epost">
+              <button type="submit">Registrer kontakt</button>
+          </form>
+      </section>
+      <section id="secKontakter">
+      </section>
+
+
+      <!-- Lim inn Firebase-koden din her -->
+      <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyATZEalTePcBVuTx_O3MX6jZcQ8RqQR-t8",
+          authDomain: "it-database-a5960.firebaseapp.com",
+          databaseURL: "https://it-database-a5960.firebaseio.com",
+          projectId: "it-database-a5960",
+          storageBucket: "it-database-a5960.appspot.com",
+          messagingSenderId: "657823545722"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+      <script src="./main.js"></script>
+  </body>
+</html>

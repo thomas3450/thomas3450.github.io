@@ -1,0 +1,145 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prosjekt </title>
+  <link rel="stylesheet" href="Nyhovedside.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB42UzGyhDFZr_BfYvDtGtJaPmWgKEYcRo",
+      authDomain: "prosjektmars.firebaseapp.com",
+      databaseURL: "https://prosjektmars.firebaseio.com",
+      projectId: "prosjektmars",
+      storageBucket: "prosjektmars.appspot.com",
+      messagingSenderId: "501470542853"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <div class="row">
+    <div class=" columns">
+      <div class="logo">
+        <h1>Klöthes</h1>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <nav class="top-bar data-topbar">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="Nyhovedside.html">HOME</a></h1>
+              </li>
+              <li onclick="toggleMenu()" class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main>
+        <div class="news_h">
+          <h1>These are the newest products now for sale!!</h1>
+        </div>
+        <div class="news_container">
+          <div class="news_article">
+            <div class="img_container">
+              <img src="https://images.nike.com/is/image/DotCom/PDP_HERO/BV4580_400_A_PREM/undercover-sfb-mountain-sko.jpg" alt="img">
+            </div>
+            <div class="txt_container">
+              <p>
+                This newest product launches as part of the autumn collection. In preperation for the cold winter to come, this "insert clothing"
+                will keep you warm and stylish. Famous designer, Fracoís Le Boot, has yet again revolutionized the fashion industry. "Cool, cooler, coolest",
+                the french designer takes inspiration from pop-culture media and revitalized retro movements when creating Klöthes. Again, this genius
+                has given us a masterpiece of apperal.
+              </p>
+            </div>
+          </div>
+          <div class="news_article">
+            <div class="img_container">
+              <img src="https://images.nike.com/is/image/DotCom/PDP_HERO/CJ0939_100_A_PREM/air-jordan-3-retro-th-sp-sko.jpg" alt="img">
+            </div>
+            <div class="txt_container">
+              <p>
+                This newest product launches as part of the autumn collection. In preperation for the cold winter to come, this "insert clothing"
+                will keep you warm and stylish. Famous designer, Fracoís Le Boot, has yet again revolutionized the fashion industry. "Cool, cooler, coolest",
+                the french designer takes inspiration from pop-culture media and revitalized retro movements when creating Klöthes. Again, this genius
+                has given us a masterpiece of apperal.
+              </p>
+            </div>
+          </div>
+          <div class="news_article">
+            <div class="img_container">
+              <img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/vvlrkopacgntjvunkqwa/air-vapormax-plus-betrue-sko-KLNh3v.jpg" alt="img">
+            </div>
+            <div class="txt_container">
+              <p>
+                This newest product launches as part of the autumn collection. In preperation for the cold winter to come, this "insert clothing"
+                will keep you warm and stylish. Famous designer, Fracoís Le Boot, has yet again revolutionized the fashion industry. "Cool, cooler, coolest",
+                the french designer takes inspiration from pop-culture media and revitalized retro movements when creating Klöthes. Again, this genius
+                has given us a masterpiece of apperal.
+              </p>
+            </div>
+          </div>
+          <div class="news_article">
+            <div class="img_container">
+              <img src="https://images.nike.com/is/image/DotCom/PDP_HERO/AO2134_101/clot-air-max-haven-sko.jpg" alt="img">
+            </div>
+            <div class="txt_container">
+              <p>
+                This newest product launches as part of the autumn collection. In preperation for the cold winter to come, this "insert clothing"
+                will keep you warm and stylish. Famous designer, Fracoís Le Boot, has yet again revolutionized the fashion industry. "Cool, cooler, coolest",
+                the french designer takes inspiration from pop-culture media and revitalized retro movements when creating Klöthes. Again, this genius
+                has given us a masterpiece of apperal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+
+
+
+      <footer class="row">
+        <div class=" columns">
+        <hr />
+      <div class="row foot_lunks">
+        <div class="columns">
+          <ul class="inline-list left">
+            <li>© Copyright 2019 Klöthes</li>
+          </ul>
+        </div>
+        <div class="columns foot_links">
+          <ul class="inline-list right">
+            <li><a href="NyHovedside.html">Home</a></li>
+            <li><a href="NyUnderside.html">Sneakers</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="News.html">News</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  </div>
+
+  <div id="menu" class="collapsed_menu right_menu">
+    <div class="menu_content">
+      <span onclick="toggleMenu()"><i class="fas fa-times"></i></span>
+      <a href="NyUnderside.html"><p>Sneakers</p></a>
+      <a href="News.html"><p>News</p></a>
+      <a href="ContactUs.html"><p>Contact Us</p></a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("collapsed_menu");
+    }
+  </script>
+
+</body>
+</html>

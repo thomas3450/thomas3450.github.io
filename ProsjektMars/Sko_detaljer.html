@@ -1,0 +1,163 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prosjekt </title>
+  <link rel="stylesheet" href="Nyhovedside.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB42UzGyhDFZr_BfYvDtGtJaPmWgKEYcRo",
+      authDomain: "prosjektmars.firebaseapp.com",
+      databaseURL: "https://prosjektmars.firebaseio.com",
+      projectId: "prosjektmars",
+      storageBucket: "prosjektmars.appspot.com",
+      messagingSenderId: "501470542853"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <div class="row">
+    <div class=" columns">
+      <div class="logo">
+        <h1>Klöthes</h1>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <nav class="top-bar data-topbar">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="Nyhovedside.html">HOME</a></h1>
+              </li>
+              <li onclick="toggleMenu()" class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+
+              <ul class="right">
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a href="">Alle varer</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="">Vet ikke</a></li>
+                <li class="divider"></li>
+              </ul>
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a href="#">Stock</a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+
+      <main>
+        <div id="display_target" class="container">
+          <p>-</p>
+        </div>
+        <div id="display_target_v" class="container">
+          <p>-</p>
+        </div>
+      </main>
+      <script type="text/javascript">
+      const db = firebase.database();
+
+      var url_string = window.location.href
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+
+      const display_target = document.getElementById("display_target");
+      const display_target_v = document.getElementById("display_target_v");
+      const joggesko = db.ref("varer/Joggesko/" + id );
+      const vintersko = db.ref("varer/Vintersko/" + id );
+
+      function generateVSko(snapshot) {
+        console.log(snapshot.val())
+        let sko = snapshot.val();
+        display_target_v.innerHTML +=`
+        <div class="single_shoe">
+         <img src="${sko.bilde}">
+            <div class="shoe_text">
+              <h5>${sko.navn}</h5>
+              <h6 class="subheader">${sko.pris}kr</h6>
+              <p>A ${sko.type}'s shoe, color: ${sko.farge}, available in size: ${sko.Size}</p>
+            </div>
+        </div>
+        `
+      }
+
+      function showVSko() {
+        display_target_v.innerHTML = ""
+        vintersko.on("value", generateVSko);
+      }
+      showVSko();
+
+
+      function generateJoggeSko(snapshot) {
+        console.log(snapshot.val())
+        let joggesko = snapshot.val();
+        display_target.innerHTML +=`
+        <div class="single_shoe">
+         <img src="${joggesko.bilde}">
+            <div class="shoe_text">
+              <h5>${joggesko.navn}</h5>
+              <h6 class="subheader">${joggesko.pris}kr</h6>
+              <p>A ${joggesko.type}'s shoe, color: ${joggesko.farge}, available in size: ${joggesko.Size}</p>
+            </div>
+        </div>
+        `
+      }
+
+      function showSko() {
+        display_target.innerHTML = ""
+        joggesko.on("value", generateJoggeSko);
+      }
+      showSko();
+      </script>
+
+      <footer class="row">
+        <div class=" columns">
+        <hr />
+      <div class="row foot_lunks">
+        <div class="columns">
+          <ul class="inline-list left">
+            <li>© Copyright 2019 Klöthes</li>
+          </ul>
+        </div>
+        <div class="columns foot_links">
+          <ul class="inline-list right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Legal info</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  </div>
+
+  <div id="menu" class="collapsed_menu right_menu">
+    <div class="menu_content">
+      <span onclick="toggleMenu()"><i class="fas fa-times"></i></span>
+      <a href="NyUnderside.html"><p>Sneakers</p></a>
+      <a href="News.html"><p>News</p></a>
+      <a href="ContactUs.html"><p>Contact Us</p></a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("collapsed_menu");
+    }
+  </script>
+
+</body>
+</html>

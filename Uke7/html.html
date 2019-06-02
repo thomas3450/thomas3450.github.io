@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <button type="button" name="button" onclick="vis20SterkestePokemon()">Vis 20 Sterkeste</button>
+      <button type="button" name="button" onclick="visGress()">Vis gress</button>
+    </header>
+    <main>
+
+    </main>
+    <script type="text/javascript">
+
+    const main = document.querySelector("main");
+
+    //Referanser til databasen
+    const db = firebase.database();
+    const pokemon = db.ref("pokemon");
+
+    function genererHTML(snapshot){
+      // Javascript-funksjon for å generere HTML for hver Pokemon
+      // Denne får dere på prøven
+      let key = snapshot.key;
+      let poke = snapshot.val();
+      main.innerHTML += `
+        <section class="pokemon">
+          <h3>${key}:${poke["Name"]}</h3>
+          <img src=${poke["Image URL"]}>
+          <p>Type: ${poke["Type 1"]}</p>
+          <p>Max HP: ${poke["Max HP"]}</p>
+          <p>Max CP: ${poke["Max CP"]}</p>
+
+
+
+
+        function visAllePokemon(){
+          main.innerHTML= ``;
+          pokemon.on("Child_added", generereHTML);
+        }
+        function vis20SterkestePokemon(){
+          main.innerhtml=``; //sletter innholdet i main
+          pokemon.orderByChild("Max CP").limitToLast(20).on("child_added", genererHTML);
+        }
+//generer html for de 20 sterkeste
+
+function visGress(){
+  main.innerHTML=``;
+  pokemon.orderByChild("Type 1").equalTo("Grass").on("Child_added", genererHTML);
+}
+
+
+        //når nettsiden lastes kjøres denne funksjonen
+        visAllePokemon();
+    </script>
+  </body>
+</html>

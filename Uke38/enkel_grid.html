@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Enkel grid</title>
+<style>
+
+    main{
+      background-color: red;
+      margin:auto;
+      width: 700px;
+    }
+
+    main{
+      display:grid;
+      grid-template-columns: 3fr 1fr; /* Deler det inn i fractions, deler */
+      grid-column-gap:10px;
+      grid-row-gap: 10px;
+    }
+
+main>article{ /* alle article elementer i main */
+background-color: cyan;
+}
+
+
+</style>
+
+
+
+  </head>
+
+
+  <body>
+
+    <main>
+          <article>Grid element 1</article>
+          <article>Grid element 2</article>
+          <article>Grid element 3</article>
+          <article>Grid element 4</article>
+          <article>Grid element 5</article>
+          <article>Grid element 6</article>
+          <article>Grid element 7</article>
+          <article>Grid element 8</article>
+          <article>Grid element 9</article>
+          <article>Grid element 10</article>
+    </main>
+
+
+  </body>
+</html>
