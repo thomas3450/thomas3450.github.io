@@ -172,8 +172,3 @@ footer {
     height: 65px;
   }
 }
-@media (orientation: landscape) {
-  .portfolio_content {
-    top: 80%;
-  }
-}
